@@ -24,6 +24,13 @@
         <p>&copy; 2025 Online Medical Store</p>
     </footer>
     <script src="app.js"></script>
+    <div id="image-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);z-index:1000;align-items:center;justify-content:center;">
+        <div id="modal-content" style="background:#fff;padding:1rem;border-radius:8px;max-width:90vw;max-height:90vh;position:relative;display:flex;flex-direction:column;align-items:center;">
+            <span id="close-modal" style="position:absolute;top:8px;right:16px;font-size:2rem;cursor:pointer;">&times;</span>
+            <img id="modal-img" src="" alt="Product Image" style="max-width:80vw;max-height:60vh;display:block;margin-bottom:1rem;" />
+            <div id="modal-thumbnails" style="display:flex;gap:0.5rem;"></div>
+        </div>
+    </div>
     <script>
       document.getElementById('nav-products').classList.add('active');
     </script>
